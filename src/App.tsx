@@ -42,6 +42,7 @@ function SectionCard({ children }: { children: React.ReactNode }) {
         hover:shadow-xl
         hover:border-gray-300
         dark:hover:border-gray-500
+        mb-6
       "
     >
       {children}
@@ -65,7 +66,7 @@ function SkillBar({
       </p>
       <div className="w-full h-2 bg-gray-300 dark:bg-gray-700 rounded-full">
         <div
-          className={`h-2 ${color} rounded-full transition-all duration-700`}
+          className={`h-2 ${color} rounded-full transition-all duration-700 `}
           style={{ width: `${level}%` }}
         />
       </div>
@@ -114,7 +115,6 @@ export default function App() {
 
   const colors = themeColors[theme];
 
-  // 🔥 DARK MODE CONTROL VIA HTML
   useEffect(() => {
     const html = document.documentElement;
 
@@ -264,6 +264,17 @@ export default function App() {
                 <SkillBar name="TypeScript" level={70} color={colors.bar} />
                 <SkillBar name="Git / CI-CD" level={75} color={colors.bar} />
               </SectionCard>
+            <div>
+              <SectionCard>
+                <h3 className="text-xl font-semibold border-b border-gray-300 dark:border-gray-600 pb-2 mb-6 text-gray-900 dark:text-white">
+                  Language
+                </h3>
+
+                {/* <SkillBar name="Java / Spring Boot" level={85} color={colors.bar} /> */}
+                <SkillBar name="Portugues" level={100} color={colors.bar} />
+                <SkillBar name="Inglesh" level={60} color={colors.bar} />
+              </SectionCard>
+            </div>
             </div>
           </div>
         </div>
