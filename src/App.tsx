@@ -157,8 +157,8 @@ export default function App() {
 
           {/* Header */}
           <div className="mb-16">
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
-              Michael de Souza
+            <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
+              Michael Moura
             </h1>
 
             <h2 className={`text-lg font-semibold ${colors.primary} mt-1`}>
@@ -166,15 +166,22 @@ export default function App() {
             </h2>
 
             <div className="flex gap-6 mt-6 text-sm text-gray-700 dark:text-gray-300">
-              <a href="#" className="flex items-center gap-2 hover:opacity-70">
+              <a href="malito:michael.moura72@hotmail.com" className="flex items-center gap-2 hover:opacity-70">
                 <FaEnvelope /> Email
               </a>
-              <a href="#" className="flex items-center gap-2 hover:opacity-70">
+              <a href="https://github.com/Dev-Moura" className="flex items-center gap-2 hover:opacity-70">
                 <FaGithub /> GitHub
               </a>
-              <a href="#" className="flex items-center gap-2 hover:opacity-70">
+              <a href="https://www.linkedin.com/in/michael-de-souza/" className="flex items-center gap-2 hover:opacity-70">
                 <FaLinkedin /> LinkedIn
               </a>
+            </div>
+            <div className="mt-6">
+              <span className="text-4 font-bold text-gray-600 dark:text-gray-200">
+                Software Engineering student (4º semestre) com foco em desenvolvimento Back-End Java e interesse em Arquitetura de Software.
+                Atualmente atuo como desenvolvedor no BNDES, participando da construção e manutenção de soluções internas, com foco em organização, automação e melhoria de processos.
+                Sou formado pelo programa Oracle Next Education (ONE - G7), com foco em Java e Spring Framework, e continuo aprofundando meus conhecimentos em arquitetura, banco de dados e boas práticas de desenvolvimento.
+              </span>
             </div>
           </div>
 
@@ -192,7 +199,7 @@ export default function App() {
                     <strong className="text-gray-900 dark:text-white">
                       BNDES
                     </strong>
-                    <span className="text-gray-500">2024 — Present</span>
+                    <span className="text-gray-500">12/2024 — Present</span>
                   </div>
 
                   <p className="text-sm text-gray-700 dark:text-gray-300 font-medium mb-2">
@@ -200,11 +207,40 @@ export default function App() {
                   </p>
 
                   <ul className="list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1">
-                    <li>Internal systems development</li>
-                    <li>Process automation</li>
-                    <li>API integrations</li>
+                    <li>Colaboração em Design Sprint, contribuindo e acompanhando para definição de problema, ideação, prototipação com miro e validação de soluções com stakeholders</li>
+                    <li>Automatização de processos internos com Python e Playwright reduzindo tarefas manuais e aumentando eficiência operacional</li>
+                    <li>Desenvolvimento de sistemas backoffice para suporte às operações do RH</li>
+                    <li>Aplicação de boas práticas de versionamento (Git/GitLab)</li>
+                    <li>Participação ativa em ciclos de testes manuais e automatizados</li>
+                    <ProjectCard
+                      title=""
+                      description=""
+                      techs={["Python", "Playwright", "API REST", "Html5/Css3", "Copilot"]}
+                      badgeColor={colors.badge}
+                    />
                   </ul>
                 </div>
+
+
+                <div>
+                  <div className="flex justify-between text-sm mt-6">
+                    <strong className="text-gray-900 dark:text-white">
+                      MGI Technogin
+                    </strong>
+                    <span className="text-gray-500">10/2023 — 04/2024</span>
+                  </div>
+
+                  <p className="text-sm text-gray-700 dark:text-gray-300 font-medium mb-2">
+                    Typist Freelancer
+                  </p>
+
+                  <ul className="list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1">
+                    <li>Atuei também na preservação e organização de documentos físicos, assegurando a integridade do acervo documental.</li>
+                    <li>Atuei como digitador, realizando a transcrição e inserção de dados contratuais no sistema da empresa.</li>
+                    <li>Responsável por alimentar o banco de dados e garantir a consistência das informações registradas.</li>
+                  </ul>
+                </div>
+
               </SectionCard>
 
               <SectionCard>
@@ -215,9 +251,9 @@ export default function App() {
                 <div>
                   <div className="flex justify-between text-sm mb-1">
                     <strong className="text-gray-900 dark:text-white">
-                      Engenharia de Software
+                      UNIÁMERICA - Engenharia de Software
                     </strong>
-                    <span className="text-gray-500">2024 — 2028</span>
+                    <span className="text-gray-500">04/2024 - 02/2027</span>
                   </div>
 
                   <p className="text-sm text-gray-700 dark:text-gray-300">
@@ -252,27 +288,35 @@ export default function App() {
             <div>
               <SectionCard>
                 <h3 className="text-xl font-semibold border-b border-gray-300 dark:border-gray-600 pb-2 mb-6 text-gray-900 dark:text-white">
-                  Skills
+                  Programming Languages
                 </h3>
-
-                <SkillBar
-                  name="Java / Spring Boot"
-                  level={85}
-                  color={colors.bar}
-                />
-                <SkillBar name="SQL" level={80} color={colors.bar} />
-                <SkillBar name="TypeScript" level={70} color={colors.bar} />
-                <SkillBar name="Git / CI-CD" level={75} color={colors.bar} />
+                <SkillBar name="Java" level={80} color={colors.bar} />
+                <SkillBar name="TypeScript" level={60} color={colors.bar} />
+                <SkillBar name="Python" level={70} color={colors.bar} />
+                <SkillBar name="JavaScript" level={80} color={colors.bar} />
+                <SkillBar name="Dart" level={40} color={colors.bar} />
+                <SkillBar name="SQL" level={50} color={colors.bar} />
+                <SkillBar name="NoSQL" level={50} color={colors.bar} />
+                <SkillBar name="Git / Git-lab" level={80} color={colors.bar} />
               </SectionCard>
+            <div>
+              <SectionCard>
+                <h3 className="text-xl font-semibold border-b border-gray-300 dark:border-gray-600 pb-2 mb-6 text-gray-900 dark:text-white">
+                  FrameWorks
+                </h3>
+                <SkillBar name="Spring / Spring Boot / hibernate" level={80} color={colors.bar} />
+                <SkillBar name="React.js / Next.js / Nest.js" level={70} color={colors.bar} />
+                <SkillBar name="Flutter" level={40} color={colors.bar} />
+                <SkillBar name="Pandas" level={40} color={colors.bar} />
+              </SectionCard>
+            </div>
             <div>
               <SectionCard>
                 <h3 className="text-xl font-semibold border-b border-gray-300 dark:border-gray-600 pb-2 mb-6 text-gray-900 dark:text-white">
                   Language
                 </h3>
-
-                {/* <SkillBar name="Java / Spring Boot" level={85} color={colors.bar} /> */}
                 <SkillBar name="Portugues" level={100} color={colors.bar} />
-                <SkillBar name="Inglesh" level={60} color={colors.bar} />
+                <SkillBar name="Inglesh" level={50} color={colors.bar} />
               </SectionCard>
             </div>
             </div>
