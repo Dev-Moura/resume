@@ -109,6 +109,20 @@ function ProjectCard({
   );
 }
 
+function Footer() {
+  return (
+    <footer className="mt-16 pt-8 border-t border-gray-300 dark:border-gray-700 text-center text-sm text-gray-600 dark:text-gray-400">
+      <p>
+        Criado por <span className="font-semibold"><a href="https://github.com/Dev-Moura" target="_blank">Michael Moura</a></span>
+      </p>
+      <p className="mt-1">
+        © {new Date().getFullYear()} — Todos os direitos reservados.
+      </p>
+    </footer>
+  );
+}
+
+
 export default function App() {
   const [dark, setDark] = useState(false);
   const [theme, setTheme] = useState<Theme>("blue");
@@ -177,7 +191,7 @@ export default function App() {
               </a>
             </div>
             <div className="mt-6">
-              <span className="text-4 font-bold text-gray-600 dark:text-gray-200">
+              <span className="text-sm font-bold text-gray-600 dark:text-gray-200">
                 Software Engineering student (4º semestre) com foco em desenvolvimento Back-End Java e interesse em Arquitetura de Software.
                 Atualmente atuo como desenvolvedor no BNDES, participando da construção e manutenção de soluções internas, com foco em organização, automação e melhoria de processos.
                 Sou formado pelo programa Oracle Next Education (ONE - G7), com foco em Java e Spring Framework, e continuo aprofundando meus conhecimentos em arquitetura, banco de dados e boas práticas de desenvolvimento.
@@ -191,19 +205,19 @@ export default function App() {
             <div className="md:col-span-2 space-y-12">
               <SectionCard>
                 <h3 className="text-xl font-semibold border-b border-gray-300 dark:border-gray-600 pb-2 mb-6 text-gray-900 dark:text-white">
-                  Work Experience
+                  Experiência Profissional
                 </h3>
 
                 <div>
                   <div className="flex justify-between text-sm mb-1">
                     <strong className="text-gray-900 dark:text-white">
-                      BNDES
+                      Banco Nacional do Desenvolvimento Econômico - BNDES
                     </strong>
                     <span className="text-gray-500">12/2024 — Present</span>
                   </div>
 
                   <p className="text-sm text-gray-700 dark:text-gray-300 font-medium mb-2">
-                    Software Development Intern
+                    Estágio de Engenharia de Software
                   </p>
 
                   <ul className="list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1">
@@ -212,12 +226,6 @@ export default function App() {
                     <li>Desenvolvimento de sistemas backoffice para suporte às operações do RH</li>
                     <li>Aplicação de boas práticas de versionamento (Git/GitLab)</li>
                     <li>Participação ativa em ciclos de testes manuais e automatizados</li>
-                    <ProjectCard
-                      title=""
-                      description=""
-                      techs={["Python", "Playwright", "API REST", "Html5/Css3", "Copilot"]}
-                      badgeColor={colors.badge}
-                    />
                   </ul>
                 </div>
 
@@ -225,13 +233,13 @@ export default function App() {
                 <div>
                   <div className="flex justify-between text-sm mt-6">
                     <strong className="text-gray-900 dark:text-white">
-                      MGI Technogin
+                      MGI Technogin - Freelancer
                     </strong>
                     <span className="text-gray-500">10/2023 — 04/2024</span>
                   </div>
 
                   <p className="text-sm text-gray-700 dark:text-gray-300 font-medium mb-2">
-                    Typist Freelancer
+                    Typist 
                   </p>
 
                   <ul className="list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1">
@@ -245,15 +253,15 @@ export default function App() {
 
               <SectionCard>
                 <h3 className="text-xl font-semibold border-b border-gray-300 dark:border-gray-600 pb-2 mb-6 text-gray-900 dark:text-white">
-                  Education
+                  Formação
                 </h3>
 
                 <div>
                   <div className="flex justify-between text-sm mb-1">
-                    <strong className="text-gray-900 dark:text-white">
                       UNIÁMERICA - Engenharia de Software
+                    <strong className="text-gray-900 dark:text-white">
                     </strong>
-                    <span className="text-gray-500">04/2024 - 02/2027</span>
+                    <span className="text-gray-500">04/2024 - 12/2027</span>
                   </div>
 
                   <p className="text-sm text-gray-700 dark:text-gray-300">
@@ -261,26 +269,70 @@ export default function App() {
                     sistemas escaláveis.
                   </p>
                 </div>
+
+                <div>
+                  <div className="flex justify-between text-sm mt-6">
+                      Oracle Next Education - G7
+                    <strong className="text-gray-900 dark:text-white">
+                    </strong>
+                    <span className="text-gray-500">04/2024 - 01/2025</span>
+                  </div>
+
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Formação focada em Java, Spring boot, MySQL, Oracle Cloud Infrastructure (oci), IA Generative, arquitetura de software, backend e
+                    sistemas escaláveis.
+                  </p>
+                </div>
               </SectionCard>
 
               <SectionCard>
                 <h3 className="text-xl font-semibold border-b border-gray-300 dark:border-gray-600 pb-2 mb-6 text-gray-900 dark:text-white">
-                  Projects
+                  Projetos
                 </h3>
 
-                <ProjectCard
-                  title="Condominium Management System"
-                  description="Sistema de gestão de moradores com controle de acesso e organização de dados."
-                  techs={["Java", "Spring Boot", "MySQL"]}
-                  badgeColor={colors.badge}
-                />
+                <a href="https://github.com/Dev-Moura/e-MedCare" target="_blank">
+                  <ProjectCard
+                    title="E-medcare"
+                    description="Desenvolvendo uma aplicação de consultorio médico, a ideia é criar um site onde o paciente possa acessar via login, ou fazer cadastro no app. marcar consultas, verificar qual médico vai lhe atender, pegar suas prescrições médicas uma aplicação de consultorio completa "
+                    techs={[ "TypeScript" ,"Node.js", "Next.js", "React", "MongoDB", ]}
+                    badgeColor={colors.badge}
+                  />
+                </a>
 
-                <ProjectCard
-                  title="Personal Portfolio"
-                  description="Portfólio moderno com troca dinâmica de tema e dark mode."
-                  techs={["React", "TypeScript", "Tailwind"]}
+                <a href="https://github.com/Dev-Moura/JavaProjectCrud" target="_blank">
+                  <ProjectCard
+                    title="JavaProjectCrud"
+                    description="Desenvolvendo um crud no Back-End Java + Spring Boot + PostregreSQL + Tsx com PrimeReact Sakai no Front-End. Uma aplicação de criar, atualizar, visuzalizar e deletar um usuário"
+                    techs={[ "Java", "Spring Boot", "PostgreSQL", "React", "TypeScript"]}
+                    badgeColor={colors.badge}
+                  />
+                </a>
+
+                <a href="https://github.com/Dev-Moura/TODO-LIST" target="_blank">
+                  <ProjectCard
+                    title="To-Do List React + Material UI"
+                    description="Um gerenciador de tarefas moderno, desenvolvido com React e Material UI, com funcionalidades como dark mode, categorias e prioridades, edição e deleção de tarefas, e armazenamento local via localStorage."
+                    techs={["React", "Material UI", "JavaScript (ES6+)",]}
+                    badgeColor={colors.badge}
+                  />
+                
+                </a>
+                <a href="https://github.com/Dev-Moura/ConversorMoedas" target="_blank">
+                  <ProjectCard
+                    title="Conversor de moedas"
+                    description="Este é um projeto de Conversor de Moedas que permite converter valores entre diferentes moedas em tempo real, utilizando uma API de câmbio para buscar cotações atualizadas. O objetivo do projeto é oferecer uma interface simples e fácil de usar para usuários que precisam realizar conversões de moeda no dia a dia. "
+                    techs={["Java", "Consumo de API", "Gson", "Maven"]}
+                    badgeColor={colors.badge}
+                  />
+                
+                </a>
+                 <ProjectCard
+                  title="Projeto de Extensão Condominium Management System"
+                  description="Neste projeto, criei um base de dados em Excel, para um condominio no Flamengo. Assim a ADM tem acesso rápido aos moradores para casso de emergência."
+                  techs={[]}
                   badgeColor={colors.badge}
                 />
+                
               </SectionCard>
             </div>
 
@@ -288,7 +340,7 @@ export default function App() {
             <div>
               <SectionCard>
                 <h3 className="text-xl font-semibold border-b border-gray-300 dark:border-gray-600 pb-2 mb-6 text-gray-900 dark:text-white">
-                  Programming Languages
+                  Linguagens de Programação
                 </h3>
                 <SkillBar name="Java" level={80} color={colors.bar} />
                 <SkillBar name="TypeScript" level={60} color={colors.bar} />
@@ -302,7 +354,7 @@ export default function App() {
             <div>
               <SectionCard>
                 <h3 className="text-xl font-semibold border-b border-gray-300 dark:border-gray-600 pb-2 mb-6 text-gray-900 dark:text-white">
-                  FrameWorks
+                  Frameworks
                 </h3>
                 <SkillBar name="Spring / Spring Boot / hibernate" level={80} color={colors.bar} />
                 <SkillBar name="React.js / Next.js / Nest.js" level={70} color={colors.bar} />
@@ -313,14 +365,15 @@ export default function App() {
             <div>
               <SectionCard>
                 <h3 className="text-xl font-semibold border-b border-gray-300 dark:border-gray-600 pb-2 mb-6 text-gray-900 dark:text-white">
-                  Language
+                  Idiomas
                 </h3>
-                <SkillBar name="Portugues" level={100} color={colors.bar} />
-                <SkillBar name="Inglesh" level={50} color={colors.bar} />
+                <SkillBar name="Português" level={100} color={colors.bar} />
+                <SkillBar name="Inglês" level={50} color={colors.bar} />
               </SectionCard>
             </div>
             </div>
           </div>
+          <Footer />
         </div>
       </div>
     </div>
