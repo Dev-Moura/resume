@@ -1,4 +1,4 @@
-Personal Portfolio
+## Personal Portfolio
 
 A modern and responsive personal portfolio built with React, TypeScript, Vite, and Tailwind CSS.
 The project focuses on clean design, smooth interactions, and customizable themes.
