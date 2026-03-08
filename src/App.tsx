@@ -328,7 +328,7 @@ export default function App() {
                 </a>
                  <ProjectCard
                   title="Projeto de Extensão Condominium Management System"
-                  description="Neste projeto, criei um base de dados em Excel, para um condominio no Flamengo. Assim a ADM tem acesso rápido aos moradores para casso de emergência."
+                  description="Neste projeto da faculdade (PEX), criei um base de dados em Excel fazendo a gestão dos dados dos moradores, novos moradores, moradores que saíram e moradores que atualizam o seu cadastro. Assim a ADM tem acesso rápido aos moradores para casos de emergência."
                   techs={[]}
                   badgeColor={colors.badge}
                 />
