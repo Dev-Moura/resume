@@ -1,73 +1,106 @@
-# React + TypeScript + Vite
+Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio built with React, TypeScript, Vite, and Tailwind CSS.
+The project focuses on clean design, smooth interactions, and customizable themes.
 
-Currently, two official plugins are available:
+This portfolio showcases professional experience, education, technical skills, and personal projects in a minimalist and interactive layout.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
 
-## React Compiler
+🎨 Dynamic color themes (Blue, Purple, Orange)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🌙 Dark Mode Toggle
 
-## Expanding the ESLint configuration
+🧩 Interactive cards with smooth hover animations
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+📱 Responsive layout
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🛠 Tech stack badges for projects
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+🎯 Minimalist and professional UI
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🛠 Tech Stack
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+React
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+TypeScript
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Vite
+
+Tailwind CSS v4
+
+React Icons
+
+📂 Project Structure
+src/
+ ├── App.tsx
+ ├── main.tsx
+ ├── index.css
+ └── components (future improvements)
+🚀 Getting Started
+1. Clone the repository
+git clone https://github.com/Dev-Moura/resume.git
+2. Navigate to the project folder
+cd portfolio
+3. Install dependencies
+npm install
+4. Run the development server
+npm run dev
+
+The project will start at:
+
+http://localhost:5173
+🎨 Customization
+
+You can easily customize:
+
+Themes in App.tsx
+
+Skills levels
+
+Projects and technologies
+
+Work experience
+
+Education section
+
+The color system is controlled through a theme object that dynamically updates the UI.
+
+🌙 Dark Mode
+
+Dark mode is implemented using Tailwind's dark variant and controlled by toggling the dark class on the <html> element.
+
+📦 Build for Production
+
+To generate a production build:
+
+npm run build
+
+Preview the build:
+
+npm run preview
+🌍 Deployment
+
+This project can be easily deployed to platforms like:
+
+Vercel
+
+Netlify
+
+GitHub Pages
+
+📄 License
+
+This project is open source and available under the MIT License.
+
+👨‍💻 Author
+
+Michael de Souza
+
+Software Engineering student passionate about backend development, systems architecture, and building scalable applications.
+
+<a href='https://github.com/Dev-Moura/'>GitHub</a>
+
+<a href='https://www.linkedin.com/in/michael-de-souza/'>LinkedIn</a>
+
+<a href='malito:michael.moura72@hotmail.com'>Email</a>
