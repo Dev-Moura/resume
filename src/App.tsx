@@ -192,9 +192,9 @@ export default function App() {
             </div>
             <div className="mt-6">
               <span className="text-sm font-bold text-gray-600 dark:text-gray-200">
-                Software Engineering student (4º semestre) com foco em desenvolvimento Back-End Java e interesse em Arquitetura de Software.
-                Atualmente atuo como desenvolvedor no BNDES, participando da construção e manutenção de soluções internas, com foco em organização, automação e melhoria de processos.
-                Sou formado pelo programa Oracle Next Education (ONE - G7), com foco em Java e Spring Framework, e continuo aprofundando meus conhecimentos em arquitetura, banco de dados e boas práticas de desenvolvimento.
+                  Desenvolvedor de Software com foco em backend, especializado no ecossistema Java (Spring Boot) e automação com Python.
+                  Experiência em otimização de processos internos e análise de dados em instituições de grande porte como o BNDES.
+                  Comprometido com a entrega de soluções escaláveis, código limpo e redução de custos operacionais através de automação inteligente.
               </span>
             </div>
           </div>
@@ -222,8 +222,10 @@ export default function App() {
 
                   <ul className="list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1">
                     <li>Colaboração em Design Sprint, contribuindo e acompanhando para definição de problema, ideação, prototipação com miro e validação de soluções com stakeholders</li>
+                    <li>Desenvolvimento e manutenção de automações de processos utilizando Python e Playwright, resultando na mitigação de tarefas manuais e aumento da consistência de dados.</li>
+                    <li>Criação de aplicações e fluxos de trabalho utilizando Power Platform (Power Apps, SharePoint, Automate), realizando testes de qualidade e correções proativas.</li>
                     <li>Automatização de processos internos com Python e Playwright reduzindo tarefas manuais e aumentando eficiência operacional</li>
-                    <li>Desenvolvimento de sistemas backoffice para suporte às operações do RH</li>
+                    <li>Refatoração de sistemas legados focando em manutenibilidade e implementação de novas funcionalidades.</li>
                     <li>Aplicação de boas práticas de versionamento (Git/GitLab)</li>
                     <li>Participação ativa em ciclos de testes manuais e automatizados</li>
                   </ul>
@@ -239,7 +241,7 @@ export default function App() {
                   </div>
 
                   <p className="text-sm text-gray-700 dark:text-gray-300 font-medium mb-2">
-                    Typist 
+                    Digitador
                   </p>
 
                   <ul className="list-disc pl-5 text-sm text-gray-700 dark:text-gray-300 space-y-1">
@@ -258,7 +260,7 @@ export default function App() {
 
                 <div>
                   <div className="flex justify-between text-sm mb-1">
-                      UNIÁMERICA - Engenharia de Software
+                      Faculdade Descomplica Digital - Engenharia de Software
                     <strong className="text-gray-900 dark:text-white">
                     </strong>
                     <span className="text-gray-500">04/2024 - 12/2027</span>
@@ -328,7 +330,7 @@ export default function App() {
                 </a>
                  <ProjectCard
                   title="Projeto de Extensão Condominium Management System"
-                  description="Neste projeto da faculdade (PEX), criei um base de dados em Excel fazendo a gestão dos dados dos moradores, novos moradores, moradores que saíram e moradores que atualizam o seu cadastro. Assim a ADM tem acesso rápido aos moradores para casos de emergência."
+                  description="Desenvolvimento de estrutura de banco de dados em nuvem para gestão de moradores, centralizando informações sigilosas e melhorando a segurança administrativa."
                   techs={[]}
                   badgeColor={colors.badge}
                 />
